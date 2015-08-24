@@ -1,0 +1,835 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ia "http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#"
+     xml:base="http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ia="http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#ano -->
+
+    <owl:DatatypeProperty rdf:about="&ia;ano">
+        <rdfs:domain rdf:resource="&ia;Veiculos"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#cor -->
+
+    <owl:DatatypeProperty rdf:about="&ia;cor">
+        <rdfs:domain rdf:resource="&ia;Veiculos"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#modelo -->
+
+    <owl:DatatypeProperty rdf:about="&ia;modelo">
+        <rdfs:domain rdf:resource="&ia;Veiculos"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#montadora -->
+
+    <owl:DatatypeProperty rdf:about="&ia;montadora">
+        <rdfs:domain rdf:resource="&ia;Veiculos"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#nome -->
+
+    <owl:DatatypeProperty rdf:about="&ia;nome">
+        <rdfs:domain rdf:resource="&ia;Veiculos"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#portas -->
+
+    <owl:DatatypeProperty rdf:about="&ia;portas">
+        <rdfs:domain rdf:resource="&ia;Veiculos"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#valor -->
+
+    <owl:DatatypeProperty rdf:about="&ia;valor">
+        <rdfs:domain rdf:resource="&ia;Veiculos"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Veiculos -->
+
+    <owl:Class rdf:about="&ia;Veiculos"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Aero-Willys -->
+
+    <owl:NamedIndividual rdf:about="&ia;Aero-Willys">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <modelo>basico</modelo>
+        <valor>medio</valor>
+        <montadora>willys overland</montadora>
+        <cor>verde</cor>
+        <ano>sessenta</ano>
+        <portas>quatro</portas>
+        <nome>Aero-Willys</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Blazer -->
+
+    <owl:NamedIndividual rdf:about="&ia;Blazer">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <portas>quatro</portas>
+        <valor>medio</valor>
+        <ano>noventa</ano>
+        <cor>preto</cor>
+        <montadora>general motors</montadora>
+        <nome>Chevrolet Blazer</nome>
+        <modelo>basico</modelo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Brasilia -->
+
+    <owl:NamedIndividual rdf:about="&ia;Brasilia">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <ano>setenta</ano>
+        <cor>amarelo</cor>
+        <montadora>volkswagen</montadora>
+        <portas>duas</portas>
+        <modelo>basico</modelo>
+        <nome>Brasilia</nome>
+        <valor>baixo</valor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Brasinca -->
+
+    <owl:NamedIndividual rdf:about="&ia;Brasinca">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <cor>azul</cor>
+        <nome>Brasinca 4200GT</nome>
+        <modelo>esportivo</modelo>
+        <valor>medio</valor>
+        <montadora>brasinca</montadora>
+        <portas>duas</portas>
+        <ano>sessenta</ano>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Cadillac -->
+
+    <owl:NamedIndividual rdf:about="&ia;Cadillac">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <nome>Cadillac Serie 70</nome>
+        <montadora>general motors</montadora>
+        <cor>vinho</cor>
+        <valor>alto</valor>
+        <portas>quatro</portas>
+        <ano>antigo</ano>
+        <modelo>basico</modelo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#CadillacGT -->
+
+    <owl:NamedIndividual rdf:about="&ia;CadillacGT">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <nome>Cadillac SS</nome>
+        <portas>quatro</portas>
+        <montadora>cadillac</montadora>
+        <modelo>esportivo</modelo>
+        <valor>medio</valor>
+        <ano>setenta</ano>
+        <cor>prata</cor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Charger -->
+
+    <owl:NamedIndividual rdf:about="&ia;Charger">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <montadora>dodge</montadora>
+        <cor>preto</cor>
+        <portas>duas</portas>
+        <valor>medio</valor>
+        <nome>Dodge Charger R/T</nome>
+        <ano>setenta</ano>
+        <modelo>esportivo</modelo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Chevette -->
+
+    <owl:NamedIndividual rdf:about="&ia;Chevette">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <nome>Chevette</nome>
+        <cor>marrom</cor>
+        <modelo>basico</modelo>
+        <portas>duas</portas>
+        <valor>baixo</valor>
+        <ano>setenta</ano>
+        <montadora>general motors</montadora>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Chieftain -->
+
+    <owl:NamedIndividual rdf:about="&ia;Chieftain">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <nome>Pontiac Chieftain 8cil</nome>
+        <montadora>general motors</montadora>
+        <modelo>basico</modelo>
+        <ano>antigo</ano>
+        <cor>vermelho</cor>
+        <valor>alto</valor>
+        <portas>duas</portas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Classe_A -->
+
+    <owl:NamedIndividual rdf:about="&ia;Classe_A">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <portas>quatro</portas>
+        <valor>alto</valor>
+        <montadora>mercedes benz</montadora>
+        <cor>preto</cor>
+        <ano>noventa</ano>
+        <modelo>basico</modelo>
+        <nome>Mercedes-Benz Classe A</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Corsa -->
+
+    <owl:NamedIndividual rdf:about="&ia;Corsa">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <portas>duas</portas>
+        <valor>baixo</valor>
+        <ano>noventa</ano>
+        <cor>vinho</cor>
+        <montadora>general motors</montadora>
+        <modelo>basico</modelo>
+        <nome>Chevrolet Corsa</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Corvair -->
+
+    <owl:NamedIndividual rdf:about="&ia;Corvair">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <modelo>basico</modelo>
+        <nome>Chevrolet Corvair</nome>
+        <cor>cinza</cor>
+        <ano>sessenta</ano>
+        <valor>medio</valor>
+        <montadora>general motors</montadora>
+        <portas>quatro</portas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Corvette -->
+
+    <owl:NamedIndividual rdf:about="&ia;Corvette">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <montadora>general motors</montadora>
+        <modelo>esportivo</modelo>
+        <portas>duas</portas>
+        <valor>alto</valor>
+        <nome>Chevrolet Corvette</nome>
+        <ano>sessenta</ano>
+        <cor>azul</cor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Crestiliner -->
+
+    <owl:NamedIndividual rdf:about="&ia;Crestiliner">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <montadora>ford</montadora>
+        <modelo>basico</modelo>
+        <cor>azul</cor>
+        <valor>alto</valor>
+        <portas>duas</portas>
+        <nome>Ford Crestiliner</nome>
+        <ano>antigo</ano>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Custom -->
+
+    <owl:NamedIndividual rdf:about="&ia;Custom">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <montadora>ford</montadora>
+        <modelo>esportivo</modelo>
+        <nome>Ford Custom</nome>
+        <cor>preto</cor>
+        <ano>antigo</ano>
+        <portas>quatro</portas>
+        <valor>alto</valor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Democrata -->
+
+    <owl:NamedIndividual rdf:about="&ia;Democrata">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <nome>Democrata</nome>
+        <modelo>esportivo</modelo>
+        <montadora>ibap</montadora>
+        <ano>sessenta</ano>
+        <valor>medio</valor>
+        <cor>vermelho</cor>
+        <portas>duas</portas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Dodge -->
+
+    <owl:NamedIndividual rdf:about="&ia;Dodge">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <nome>Chrysler Dodge</nome>
+        <modelo>basico</modelo>
+        <cor>azul</cor>
+        <montadora>chrysler</montadora>
+        <valor>alto</valor>
+        <ano>antigo</ano>
+        <portas>quatro</portas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Fiesta -->
+
+    <owl:NamedIndividual rdf:about="&ia;Fiesta">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <ano>noventa</ano>
+        <montadora>ford</montadora>
+        <cor>preto</cor>
+        <nome>Ford Fiesta</nome>
+        <valor>baixo</valor>
+        <portas>quatro</portas>
+        <modelo>basico</modelo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Fiorino -->
+
+    <owl:NamedIndividual rdf:about="&ia;Fiorino">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <montadora>fiat</montadora>
+        <nome>Fiorino</nome>
+        <portas>duas</portas>
+        <modelo>basico</modelo>
+        <cor>branco</cor>
+        <ano>oitenta</ano>
+        <valor>baixo</valor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Fusca -->
+
+    <owl:NamedIndividual rdf:about="&ia;Fusca">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <portas>duas</portas>
+        <cor>azul</cor>
+        <montadora>volkswagen</montadora>
+        <ano>sessenta</ano>
+        <nome>VW Fusca</nome>
+        <modelo>basico</modelo>
+        <valor>baixo</valor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Galaxie -->
+
+    <owl:NamedIndividual rdf:about="&ia;Galaxie">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <ano>oitenta</ano>
+        <cor>cinza</cor>
+        <nome>Ford Galaxie</nome>
+        <montadora>ford</montadora>
+        <modelo>basico</modelo>
+        <portas>quatro</portas>
+        <valor>alto</valor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Gol -->
+
+    <owl:NamedIndividual rdf:about="&ia;Gol">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <nome>Gol 1000</nome>
+        <portas>quatro</portas>
+        <montadora>volkswagen</montadora>
+        <valor>baixo</valor>
+        <modelo>basico</modelo>
+        <ano>noventa</ano>
+        <cor>azul</cor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Golf -->
+
+    <owl:NamedIndividual rdf:about="&ia;Golf">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <cor>preto</cor>
+        <ano>doismil</ano>
+        <montadora>volkswagen</montadora>
+        <portas>quatro</portas>
+        <valor>alto</valor>
+        <nome>Golf Sporting</nome>
+        <modelo>esportivo</modelo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Golf90 -->
+
+    <owl:NamedIndividual rdf:about="&ia;Golf90">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <valor>medio</valor>
+        <ano>noventa</ano>
+        <portas>quatro</portas>
+        <montadora>volkswagen</montadora>
+        <cor>cinza</cor>
+        <nome>Golf Gti</nome>
+        <modelo>esportivo</modelo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Gordini -->
+
+    <owl:NamedIndividual rdf:about="&ia;Gordini">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <modelo>basico</modelo>
+        <montadora>renault</montadora>
+        <valor>baixo</valor>
+        <ano>sessenta</ano>
+        <nome>Gordini</nome>
+        <portas>quatro</portas>
+        <cor>vinho</cor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Impala -->
+
+    <owl:NamedIndividual rdf:about="&ia;Impala">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <ano>sessenta</ano>
+        <valor>medio</valor>
+        <portas>quatro</portas>
+        <montadora>general motors</montadora>
+        <nome>Impala SS</nome>
+        <modelo>esportivo</modelo>
+        <cor>cinza</cor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Interlagos -->
+
+    <owl:NamedIndividual rdf:about="&ia;Interlagos">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <modelo>esportivo</modelo>
+        <portas>duas</portas>
+        <nome>Interlagos</nome>
+        <ano>sessenta</ano>
+        <valor>alto</valor>
+        <cor>vermelho</cor>
+        <montadora>willys overland</montadora>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Itamaraty -->
+
+    <owl:NamedIndividual rdf:about="&ia;Itamaraty">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <nome>Itamaraty</nome>
+        <portas>quatro</portas>
+        <valor>medio</valor>
+        <ano>sessenta</ano>
+        <modelo>basico</modelo>
+        <montadora>willys overland</montadora>
+        <cor>vermelho</cor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Ka -->
+
+    <owl:NamedIndividual rdf:about="&ia;Ka">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <ano>noventa</ano>
+        <cor>vermelho</cor>
+        <montadora>ford</montadora>
+        <modelo>basico</modelo>
+        <valor>baixo</valor>
+        <portas>duas</portas>
+        <nome>Ford Ka</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Kadett -->
+
+    <owl:NamedIndividual rdf:about="&ia;Kadett">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <modelo>esportivo</modelo>
+        <cor>branco</cor>
+        <nome>Kadett GSi</nome>
+        <montadora>general motors</montadora>
+        <valor>baixo</valor>
+        <ano>oitenta</ano>
+        <portas>duas</portas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Landau -->
+
+    <owl:NamedIndividual rdf:about="&ia;Landau">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <montadora>ford</montadora>
+        <modelo>basico</modelo>
+        <ano>setenta</ano>
+        <cor>preto</cor>
+        <nome>Ford Landau</nome>
+        <valor>baixo</valor>
+        <portas>quatro</portas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Maverick -->
+
+    <owl:NamedIndividual rdf:about="&ia;Maverick">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <nome>Maverick GT v8</nome>
+        <cor>preto</cor>
+        <montadora>ford</montadora>
+        <valor>medio</valor>
+        <ano>setenta</ano>
+        <modelo>esportivo</modelo>
+        <portas>duas</portas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Monza -->
+
+    <owl:NamedIndividual rdf:about="&ia;Monza">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <cor>preto</cor>
+        <nome>Monza</nome>
+        <montadora>general motors</montadora>
+        <modelo>basico</modelo>
+        <portas>quatro</portas>
+        <valor>baixo</valor>
+        <ano>oitenta</ano>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Opala -->
+
+    <owl:NamedIndividual rdf:about="&ia;Opala">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <nome>Opala Deluxo</nome>
+        <modelo>basico</modelo>
+        <portas>quatro</portas>
+        <cor>preto</cor>
+        <montadora>general motors</montadora>
+        <ano>setenta</ano>
+        <valor>medio</valor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Palio -->
+
+    <owl:NamedIndividual rdf:about="&ia;Palio">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <montadora>fiat</montadora>
+        <modelo>basico</modelo>
+        <valor>baixo</valor>
+        <nome>Palio Attractive</nome>
+        <cor>vermelho</cor>
+        <portas>quatro</portas>
+        <ano>noventa</ano>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#PalioAdv -->
+
+    <owl:NamedIndividual rdf:about="&ia;PalioAdv">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <nome>Fiat Palio Adventure</nome>
+        <valor>medio</valor>
+        <portas>quatro</portas>
+        <ano>noventa</ano>
+        <modelo>basico</modelo>
+        <montadora>fiat</montadora>
+        <cor>prata</cor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Panorama -->
+
+    <owl:NamedIndividual rdf:about="&ia;Panorama">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <montadora>fiat</montadora>
+        <cor>branco</cor>
+        <modelo>basico</modelo>
+        <valor>baixo</valor>
+        <portas>quatro</portas>
+        <ano>oitenta</ano>
+        <nome>Fiat Panorama</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Passat -->
+
+    <owl:NamedIndividual rdf:about="&ia;Passat">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <ano>setenta</ano>
+        <montadora>volkswagen</montadora>
+        <valor>baixo</valor>
+        <cor>cinza</cor>
+        <portas>duas</portas>
+        <modelo>basico</modelo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Puma -->
+
+    <owl:NamedIndividual rdf:about="&ia;Puma">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <modelo>esportivo</modelo>
+        <nome>Puma GT</nome>
+        <valor>medio</valor>
+        <cor>laranja</cor>
+        <ano>sessenta</ano>
+        <portas>duas</portas>
+        <montadora>puma</montadora>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Tipo -->
+
+    <owl:NamedIndividual rdf:about="&ia;Tipo">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <modelo>basico</modelo>
+        <nome>Fiat Tipo</nome>
+        <portas>quatro</portas>
+        <montadora>fiat</montadora>
+        <valor>baixo</valor>
+        <cor>prata</cor>
+        <ano>noventa</ano>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Tudor -->
+
+    <owl:NamedIndividual rdf:about="&ia;Tudor">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <ano>antigo</ano>
+        <montadora>ford</montadora>
+        <cor>preto</cor>
+        <valor>alto</valor>
+        <modelo>basico</modelo>
+        <nome>Ford Tudor</nome>
+        <portas>quatro</portas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Uno -->
+
+    <owl:NamedIndividual rdf:about="&ia;Uno">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <valor>medio</valor>
+        <ano>doismil</ano>
+        <nome>Fiat Uno Antigo</nome>
+        <portas>quatro</portas>
+        <modelo>basico</modelo>
+        <cor>branco</cor>
+        <montadora>fiat</montadora>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#Vectra -->
+
+    <owl:NamedIndividual rdf:about="&ia;Vectra">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <portas>quatro</portas>
+        <nome>Chevrolet Vectra CD</nome>
+        <ano>noventa</ano>
+        <cor>prata</cor>
+        <montadora>general motors</montadora>
+        <modelo>basico</modelo>
+        <valor>medio</valor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#XK_150 -->
+
+    <owl:NamedIndividual rdf:about="&ia;XK_150">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <modelo>basico</modelo>
+        <portas>duas</portas>
+        <ano>antigo</ano>
+        <montadora>Jaguar</montadora>
+        <nome>Jaguar XK -150 Fixed Head Coupe</nome>
+        <cor>cinza</cor>
+        <valor>alto</valor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#fiat147 -->
+
+    <owl:NamedIndividual rdf:about="&ia;fiat147">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <nome>Fiat 147 GLS</nome>
+        <portas>duas</portas>
+        <cor>vermelho</cor>
+        <ano>setenta</ano>
+        <montadora>fiat</montadora>
+        <modelo>esportivo</modelo>
+        <valor>baixo</valor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#porsche911 -->
+
+    <owl:NamedIndividual rdf:about="&ia;porsche911">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <montadora>porsche</montadora>
+        <ano>oitenta</ano>
+        <portas>duas</portas>
+        <valor>alto</valor>
+        <nome>Porsche 911</nome>
+        <cor>preto</cor>
+        <modelo>esportivo</modelo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gcarvalho/ontologies/2014/9/ia#250GT -->
+
+    <owl:NamedIndividual rdf:about="&ia;250GT">
+        <rdf:type rdf:resource="&ia;Veiculos"/>
+        <ano>antigo</ano>
+        <cor>vermelho</cor>
+        <nome>250GT LWB</nome>
+        <portas>duas</portas>
+        <valor>alto</valor>
+        <modelo>esportivo</modelo>
+        <montadora>ferrari</montadora>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
